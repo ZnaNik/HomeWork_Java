@@ -66,9 +66,7 @@ public class MainClass {
 
         //8.
         //Generate random array
-        //int[] arr_8 = procedure.getRandomArray();
-        //int[] arr_8 = {18, 2, 46, 7, 33, 11, 19, 6, 19, 4, 41};
-        int[] arr_8 = {1,2,3};
+        int[] arr_8 = procedure.getRandomArray();
         System.out.println(Arrays.toString(arr_8));
 
         //8.1 we will make shift array

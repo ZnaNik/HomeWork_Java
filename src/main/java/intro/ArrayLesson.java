@@ -161,14 +161,13 @@ public class ArrayLesson {
         int recursePos = 0; //for recursing
 
         while (tick > 0) {
-            //System.out.println(curPos + " number: " +curNumber);
             //move check
             newPos = curPos + shift;
-            if (Math.abs(newPos/arr.length) >0)
-                newPos = newPos%arr.length;
+            if (Math.abs(newPos / arr.length) > 0)
+                newPos = newPos % arr.length;
 
             if (newPos < 0)
-                newPos = arr.length+newPos;
+                newPos = arr.length + newPos;
 
             //save number
             saveNumber = arr[newPos];
@@ -186,66 +185,7 @@ public class ArrayLesson {
             }
             //-1 shift
             tick--;
-            //System.out.println(Arrays.toString(arr));
         }
-
-
-//
-//        int n = initial;
-//        //check
-//        if (Math.abs(n) > arr.length)
-//        {
-//            n = Math.abs(n) - ((Math.abs(n)/ arr.length)*arr.length);
-//            if (initial < 0)
-//                n = n * -1;
-//        }
-//
-//        int tick = arr.length;
-//        int curPos = 0;
-//        int value = arr[0];
-//        int newPos, saveValue;
-//        while (tick > 0){
-//
-//            //Высчитываем новую позицию с учетом, что число может перевалить за границу
-//            newPos =getNewPos(curPos, n, arr.length);
-//            //if(curPos == 0)
-//            //    arr[0] = arr[getNewPos(curPos, n , arr.length)];
-//            //сохраняем старое значение
-//            saveValue = arr[newPos];
-//            //Перемещаем на новую позицию старое значение;
-//            arr[newPos] = value;
-//
-//            if (curPos == 0)
-//            {
-//                arr[curPos] = n < 0 ? arr[curPos + n] : arr[arr.length-n];
-//            }
-//            //существует вариант попасть в бесконечный цикл
-//            curPos = newPos;
-//            //Теперь мы должны перемещать новое значение
-//            value = saveValue;
-//            if (newPos == 0) {
-//                curPos = curPos +1;
-//                value = arr[curPos];
-//            }
-//            //уменьшаем количество которое нужно перемещать
-//            tick --;
-//        }
-    }
-
-    public int getNewPos(int curPos, int offSet, int arrLength) {
-        //0 4 3
-        int newPos = offSet + curPos;
-        if (newPos / arrLength > 0)
-            if (newPos % arrLength == 0)
-                newPos = 0;
-            else
-                newPos = (newPos - (newPos / arrLength) * arrLength);
-
-        //Проверка на сдвиг влево
-        if (newPos < 0)
-            newPos = arrLength + newPos;
-
-        return newPos;
     }
 }
 
