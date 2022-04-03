@@ -53,7 +53,7 @@ public class ArrayLesson {
 
     public int[][] diagonalArr() {
         int lenArray = 10;
-        int arr[][] = new int[lenArray][lenArray];
+        int[][] arr = new int[lenArray][lenArray];
 
         for (int i = 0; i < arr.length; i++) {
             arr[i][i] = 1;
@@ -64,8 +64,8 @@ public class ArrayLesson {
 
     public void printDoubleLvlArray(int[][] arr) {
 
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(Arrays.toString(arr[i]));
+        for (int[] ints : arr) {
+            System.out.println(Arrays.toString(ints));
         }
     }
 
