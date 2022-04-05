@@ -20,7 +20,7 @@ public class MainClass5 {
 
         //Выводим
         for (Worker worker: workerList) {
-            if (worker.age > 40)
+            if (worker.getAge() > 40)
                 worker.writeInformation();
         }
     }

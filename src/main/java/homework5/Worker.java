@@ -1,11 +1,11 @@
 package homework5;
 
 public class Worker {
-    public String person;
-    public String post;
-    public String phone;
-    public int salary;
-    public int age;
+    private String person;
+    private String post;
+    private String phone;
+    private int salary;
+    private int age;
 
     public Worker(String person, String post, String phone, int salary, int age) {
         this.person = person;
@@ -13,6 +13,10 @@ public class Worker {
         this.phone = phone;
         this.salary = salary;
         this.age = age;
+    }
+
+    public int getAge(){
+        return this.age;
     }
 
     public void writeInformation() {
