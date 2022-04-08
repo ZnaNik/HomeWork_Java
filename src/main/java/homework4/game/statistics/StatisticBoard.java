@@ -1,6 +1,5 @@
 package homework4.game.statistics;
 
-import homework4.MainClass;
 import homework4.field.Coordinate;
 import homework4.field.consts.FieldDefault;
 import homework4.game.GameClass;

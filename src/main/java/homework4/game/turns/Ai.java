@@ -1,7 +1,6 @@
 package homework4.game.turns;
 
 
-import homework4.MainClass;
 import homework4.consts.ConstsClass;
 import homework4.consts.UtilsClass;
 import homework4.field.Coordinate;

@@ -4,7 +4,6 @@ import homework4.consts.UtilsClass;
 import homework4.consts.ConstsClass;
 import homework4.field.consts.DotsClass;
 import homework4.field.consts.FieldDefault;
-import homework4.game.GameClass;
 import homework4.game.statistics.StatisticBoard;
 
 import java.util.Arrays;
