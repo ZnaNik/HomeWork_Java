@@ -14,40 +14,40 @@ public class Coordinate{
         int x = 0;
         int y = 0;
         switch (direction) {
-            case (1):
+            case (1) -> {
                 x = -1;
                 y = -1;
-                break;
-            case (2):
+            }
+            case (2) -> {
                 x = 0;
                 y = -1;
-                break;
-            case (3):
+            }
+            case (3) -> {
                 x = 1;
                 y = -1;
-                break;
-            case (4):
+            }
+            case (4) -> {
                 x = -1;
                 y = 0;
-                break;
-            case (5):
+            }
+            case (5) -> {
                 x = 1;
                 y = 0;
-                break;
-            case (6):
+            }
+            case (6) -> {
                 x = -1;
                 y = 1;
-                break;
-            case (7):
+            }
+            case (7) -> {
                 x = 0;
                 y = 1;
-                break;
-            case (8):
+            }
+            case (8) -> {
                 x = 1;
                 y = 1;
-                break;
-            default:
-                break;
+            }
+            default -> {
+            }
         }
         return new Coordinate(x, y);
     }
