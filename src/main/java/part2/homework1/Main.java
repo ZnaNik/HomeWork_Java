@@ -4,28 +4,34 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-
-        //1. Создаем наших спортсменов
-        iSportsMan[] sportsMens = getRandomSportMens();
-
-        //2. Теперь создадим полосу препятствий
-        iObstruction[] obstructions = getObstructionWay();
-
-        //3. Проходим полосу препятствий
-        for (iSportsMan sportsMan: sportsMens) {
-            int obstructionCount = 0;
-            for (iObstruction obstruction: obstructions) {
-                obstructionCount++;
-                System.out.println("Препятствие №: " + obstructionCount);
-                if  (!obstruction.pass(sportsMan))
-                {
-                    System.out.println("Сошел с дистанции");
-                    break;
-                }
-            }
-            if (obstructionCount == obstructions.length)
-                System.out.println("Смог пройти все препятствия");
-        }
+     byte a = 127;
+     a++;
+     System.out.println(a);
+        String s = 2 + 2 + " tt";
+        System.out.println(s);
+        System.out.println(new int[][]{ {1, 2 ,7}, {2,3,5}}[1][2]);
+        return;
+//        //1. Создаем наших спортсменов
+//        iSportsMan[] sportsMens = getRandomSportMens();
+//
+//        //2. Теперь создадим полосу препятствий
+//        iObstruction[] obstructions = getObstructionWay();
+//
+//        //3. Проходим полосу препятствий
+//        for (iSportsMan sportsMan: sportsMens) {
+//            int obstructionCount = 0;
+//            for (iObstruction obstruction: obstructions) {
+//                obstructionCount++;
+//                System.out.println("Препятствие №: " + obstructionCount);
+//                if  (!obstruction.pass(sportsMan))
+//                {
+//                    System.out.println("Сошел с дистанции");
+//                    break;
+//                }
+//            }
+//            if (obstructionCount == obstructions.length)
+//                System.out.println("Смог пройти все препятствия");
+//        }
     }
 
     private static iSportsMan[] getRandomSportMens() {
